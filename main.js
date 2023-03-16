@@ -24,9 +24,9 @@ $http.afterRequest = function () {
 }
 
 // 封装弹窗
-uni.$showMsg = function() {
+uni.$showMsg = function(msg) {
   uni.showToast({
-    title: '数据请求失败',
+    title: msg || '数据请求失败',
     duration: 1500,
     icon: 'none'
   })
