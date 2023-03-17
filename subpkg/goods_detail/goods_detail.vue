@@ -103,7 +103,7 @@ export default {
           goods_name: this.goods_info.goods_name,
           goods_price: this.goods_info.goods_price,
           goods_count: 1,
-          goods_small_logo: this.goods_small_logo,
+          goods_small_logo: this.goods_info.goods_small_logo,
           goods_state: true
         }
         this.addToCart(goods)

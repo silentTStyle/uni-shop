@@ -14,6 +14,11 @@ import {
     computed: {
       ...mapGetters('m_cart', ['total'])
     },
+    watch: {
+      total(newVal) {
+        this.setBadge()
+      }
+    },
     onShow() {
       this.setBadge()
     }
